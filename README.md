@@ -1,70 +1,147 @@
-# Getting Started with Create React App
+# 🔄 Echo Chamber - Opposing View Finder
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 📝 Description
 
-## Available Scripts
+Echo Chamber is an interactive React application designed to break users out of their information bubbles by presenting balanced perspectives on controversial topics. In today's polarized media landscape, people often only consume content that reinforces their existing beliefs, creating "echo chambers" that limit exposure to diverse viewpoints. This application addresses this problem by showing arguments from multiple sides of contentious issues, helping users develop a more nuanced understanding of complex debates.
 
-In the project directory, you can run:
+Users can explore pre-loaded controversial topics or submit their own for discussion. Each topic features color-coded pro and con arguments, interactive voting, and expandable cards for deeper exploration. The goal is to promote critical thinking and help users appreciate the complexity of divisive issues.
 
-### `npm start`
+## ✨ Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Topic Exploration & Submission**
+  - Browse through existing controversial topics with balanced viewpoints
+  - Submit new topics through a validated form interface
+  - Clean, intuitive UI for easy navigation
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Multi-Perspective Debate Pages**
+  - Color-coded pro/con arguments (green for supporting, red for opposing)
+  - Interactive voting system with real-time percentage display
+  - Clear visual distinction between different viewpoints
 
-### `npm test`
+- **In-Depth Learning Resources**
+  - Expandable argument cards with detailed explanations
+  - Source citations for each perspective
+  - Additional reading materials and references
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Modern User Experience**
+  - Responsive design for seamless use across mobile and desktop
+  - Accessible interface with clear typography and color contrast
+  - Smooth navigation between different sections of the application
 
-### `npm run build`
+## 🛠️ Tech Stack
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+| Technology | Purpose |
+|------------|---------|
+| **React.js** | Front-end library built with functional components and hooks |
+| **React Router** | Navigation and routing between multiple pages |
+| **Context API** | State management across components |
+| **Tailwind CSS** | Utility-first CSS framework for responsive design |
+| **Mock API** | Simulated backend for data persistence |
+| **NPM** | Package management |
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🚀 Setup Instructions
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Prerequisites
+- Node.js (v14.0 or later)
+- npm (v6.0 or later)
+- tailwindcss (below v4.0)
 
-### `npm run eject`
+### Installation
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/your-username/echo-chamber.git
+   cd echo-chamber
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+3. **Set up Tailwind CSS**
+   ```bash
+   npx tailwindcss init -p
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+4. **Start the development server**
+   ```bash
+   npm start
+   ```
 
-## Learn More
+5. **Access the application**
+   Open your browser and navigate to `http://localhost:3000`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Build for Production
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+npm run build
+```
 
-### Code Splitting
+This creates a `build` directory with production-optimised files that can be deployed to hosting services.
+- For Vercel: `vercel --prod`
+- For Netlify: Connect your GitHub repository in the Netlify dashboard
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Application Structure
 
-### Analyzing the Bundle Size
+```
+Directory structure:
+└── echo_chamber/
+  ├── README.md           # Description, features, setup instructions, & Tech Stack
+  ├── src/
+  │   ├── components/     # Reusable UI components
+  │   ├── context/        # React Context for state management
+  │   ├── pages/          # Main route components
+  │   ├── services/       # API and data handling
+  │   ├── App.jsx         # Root component
+  │   └── index.js        # Entry point
+  └── public/             # Static assets
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 📸 Screenshots
 
-### Making a Progressive Web App
+![Home Page](./public/assets/HomePage.png)
+*The home page allows users to submit new topics or browse existing ones*
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+![Debate Page](./public/assets/DebatePage.png)
+*The debate page presents balanced arguments on both sides of an issue. Neatly colour-coded to enable a more intuitive UI*
 
-### Advanced Configuration
+![Learn More Page](./public/assets/LearnMorePage.png)
+*The Learn More page provides detailed information and references*
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
+## Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+This project has been deployed using vercel and can be found here. It can be deployed to various other hosting platforms like:
 
-### `npm run build` fails to minify
+- **Netlify**: Excellent for continuous deployment
+- **GitHub Pages**: Good option for project showcasing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 🔮 Future Enhancements
+
+- 👤 User authentication for personalized experience
+- 💬 Comment system for community discussions
+- 📰 Integration with real news APIs for live arguments
+- 🏷️ Topic categorization and filtering
+- ✅ Fact-checking integration using API
+- 📊 Advanced analytics on opinion distribution
+- 📱 Mobile app version
+
+## ⚡Upcoming features
+
+- Backend integration to store real-time data.
+- User login and authentication.
+- Argument presentation during topic addition.
+- Fact-checking integration
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+# Happy Coding!
