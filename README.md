@@ -1,4 +1,5 @@
 # 🔄 Echo Chamber - Opposing View Finder
+[_Click on me to visit_](https://echochamber-rho.vercel.app/)
 
 ## 📝 Description
 
@@ -112,7 +113,7 @@ Directory structure:
 
 ## Deployment
 
-This project has been deployed using vercel and can be found here. It can be deployed to various other hosting platforms like:
+This project has been deployed using vercel. It can be deployed to various other hosting platforms like:
 
 - **Netlify**: Excellent for continuous deployment
 - **GitHub Pages**: Good option for project showcasing
