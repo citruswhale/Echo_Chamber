@@ -1,3 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --color-primary: #2563EB;
+  --color-hover: #1d4ed8;
+  --color-pro: #DC2626;
+  --color-con: #16A34A;
+  --color-text: #0d0d0d;
+  --color-text-light: #ffffff;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: var(--color-text);
+  line-height: 1.5;
+  background-color: #f9fafb;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1 0 auto;
+}
